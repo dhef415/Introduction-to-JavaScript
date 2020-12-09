@@ -156,11 +156,22 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+//1rock 2paper 3scissors//
+Math.random()
+let computer=Math.floor(Math.random()*3)+1
+function game(user,computer){
+    
+    if(user===1 && computer===3 || user===2 && computer===1 || user===3 && computer===2){
+      return "you win!"
+    }else if(user===3 && computer===1 || user===1 && computer===2 || user===2 && computer===3){
+      return "you lose!"
+    }else {
+      return "it's a tie"
+    }
 
-function game(user, computer){
-    /*add your code here*/
 }
-  
+console.log(game(1,computer));
+
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
